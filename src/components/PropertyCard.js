@@ -1,26 +1,25 @@
 import "./PropertyCard.css";
-import propertiesData from "../database/propertiesData";
 
 export default function PropertyCard({propertyData}) {
 
     return <>
-        <div class="property-card">
+        <div className="property-card">
 
-            <div class="property-image">
+            <div className="property-image">
                 <img src={propertyData.image} alt={propertyData.name} />
             </div>
 
-            <div class="popular-property-div flex-c">
-                <span class="material-symbols-outlined">
+            <div className="popular-property-div flex-c">
+                <span className="material-symbols-outlined">
                     temp_preferences_custom
                 </span>
                 Popular
             </div>
 
-            <div class="property-content">
+            <div className="property-content">
 
-                <div class="property-content-header">
-                    <div class="property-price">
+                <div className="property-content-header">
+                    <div className="property-price">
                         <h2>₹{propertyData.rent}</h2>
                         <p>/month</p>
                     </div>
@@ -29,31 +28,31 @@ export default function PropertyCard({propertyData}) {
 
                 </div>
 
-                <p class="property-address">{propertyData.address}</p>
+                <p className="property-address">{propertyData.address}</p>
 
-                <div class="property-card-footer flex-sb-c">
+                <div className="property-card-footer flex-sb-c">
 
-                    <div class="property-card-footer-div flex-c">
+                    <div className="property-card-footer-div flex-c">
 
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                             bed
                         </span>
                         <p>3 Beds</p>
 
                     </div>
 
-                    <div class="property-card-footer-div flex-c">
+                    <div className="property-card-footer-div flex-c">
 
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                             bathtub
                         </span>
                         <p>2 Bathrooms</p>
 
                     </div>
 
-                    <div class="property-card-footer-div flex-c">
+                    <div className="property-card-footer-div flex-c">
 
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                             area_chart
                         </span>
 
