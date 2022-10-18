@@ -1,0 +1,106 @@
+.property-card {
+   position: relative;
+   height: 27rem;
+   width: 20rem;
+   background-color: white;
+   border-radius: 2%;
+   border: 1px solid red;
+}
+
+.property-image {
+   width: 20rem;
+}
+
+.property-image img {
+   max-width: 100%;
+   border-top-left-radius: 2%;
+   border-top-right-radius: 2%;
+   display: block;
+   height: auto;
+}
+
+.property-content {
+   padding-left: 1rem;
+}
+
+.property-content-header {
+   display: flex;
+   flex-direction: column;
+   margin-top: 2rem;
+}
+
+.property-price {
+   display: flex;
+   align-items: center;
+}
+
+.property-price h2 {
+  color: rgb(103, 45, 248);
+}
+
+.property-price p {
+   font-size: 0.75rem;
+   color: gray;
+}
+
+.property-address {
+   color: gray;
+   font-size: 0.9rem;
+   margin-top: 0.5rem;
+}
+
+.property-card-footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-right: 1rem;
+   margin-top: 0.75rem;
+   border-top: 1px solid rgb(220, 220, 220);
+}
+
+.property-card-footer-div {
+   display: flex;
+   gap: 0.5rem;
+   align-items: center;
+   font-size: 0.75rem;
+   margin-top: 1rem;
+}
+
+.property-card-footer-div span {
+   color: rgb(103, 45, 248);
+   font-size: 1.25rem;
+}
+
+.property-card-footer-div p {
+   color: gray;
+}
+
+.popular-property-div {
+   width: 7rem;
+   height: 2rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   background-color: rgb(103, 45, 248);
+   color: white;
+   font-weight: 550;
+   font-size: 0.8rem;
+   padding-left: 0.75rem;
+   border-radius: 0.25rem;
+   position: absolute;
+   top: 205px;
+   left: -10px;
+}
+
+.popular-property-div span {
+   font-size: 1.25rem;
+}
+
+.property-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    /* margin-left: 5rem; */
+}

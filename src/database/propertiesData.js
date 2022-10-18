@@ -31,7 +31,7 @@ const propertiesData = [
     },
     {
         name: "Galaxy Apartment",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666009176/Rent%20A%20Property/Delhi/download_rjlqw3.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666075260/Rent%20A%20Property/Delhi/download_rjlqw3_1_io6fzg.png",
         rent: 9000,
         location: locationData.delhi,
         address: "106 Signature Road, " + locationData.delhi,
