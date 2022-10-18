@@ -22,3 +22,28 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: rgb(245, 245, 245);
 }
+
+.flex-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c {
+    display: flex;
+    align-items: center;
+}
+
+
+.flex-wrap-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-wrap-sb-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -4,7 +4,7 @@
    width: 20rem;
    background-color: white;
    border-radius: 2%;
-   border: 1px solid red;
+   margin-bottom: 2rem;
 }
 
 .property-image {
@@ -35,7 +35,8 @@
 }
 
 .property-price h2 {
-  color: rgb(103, 45, 248);
+  /* color: rgb(103, 45, 248); */
+  color: #6f65f1;
 }
 
 .property-price p {
@@ -50,24 +51,20 @@
 }
 
 .property-card-footer {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
    margin-right: 1rem;
    margin-top: 0.75rem;
    border-top: 1px solid rgb(220, 220, 220);
 }
 
 .property-card-footer-div {
-   display: flex;
    gap: 0.5rem;
-   align-items: center;
    font-size: 0.75rem;
    margin-top: 1rem;
 }
 
 .property-card-footer-div span {
-   color: rgb(103, 45, 248);
+   /* color: rgb(103, 45, 248); */
+   color: #6f65f1;
    font-size: 1.25rem;
 }
 
@@ -78,10 +75,9 @@
 .popular-property-div {
    width: 7rem;
    height: 2rem;
-   display: flex;
-   align-items: center;
    gap: 0.5rem;
-   background-color: rgb(103, 45, 248);
+   /* background-color: rgb(103, 45, 248); */
+   background-color: #6f65f1;
    color: white;
    font-weight: 550;
    font-size: 0.8rem;
@@ -97,10 +93,6 @@
 }
 
 .property-listing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    /* margin-left: 5rem; */
+    border: 1px solid red;
+    padding: 2.5rem 5rem;
 }

@@ -10,7 +10,7 @@ export default function PropertyCard({propertyData}) {
                 <img src={propertyData.image} alt={propertyData.name} />
             </div>
 
-            <div class="popular-property-div">
+            <div class="popular-property-div flex-c">
                 <span class="material-symbols-outlined">
                     temp_preferences_custom
                 </span>
@@ -31,9 +31,9 @@ export default function PropertyCard({propertyData}) {
 
                 <p class="property-address">{propertyData.address}</p>
 
-                <div class="property-card-footer">
+                <div class="property-card-footer flex-sb-c">
 
-                    <div class="property-card-footer-div">
+                    <div class="property-card-footer-div flex-c">
 
                         <span class="material-symbols-outlined">
                             bed
@@ -42,7 +42,7 @@ export default function PropertyCard({propertyData}) {
 
                     </div>
 
-                    <div class="property-card-footer-div">
+                    <div class="property-card-footer-div flex-c">
 
                         <span class="material-symbols-outlined">
                             bathtub
@@ -51,7 +51,7 @@ export default function PropertyCard({propertyData}) {
 
                     </div>
 
-                    <div class="property-card-footer-div">
+                    <div class="property-card-footer-div flex-c">
 
                         <span class="material-symbols-outlined">
                             area_chart
