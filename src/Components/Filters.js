@@ -8,22 +8,14 @@ export default function Filters() {
 
     const [filterState, setFilterState] = useState(initialState);
 
-    const searchProperty = () => {
-
-        dispatch({ type: "RENT", payload: filterState.rent })
-
-        dispatch({ type: "LOCATION", payload: filterState.location })
-
-        dispatch({ type: "PROPERTY_TYPE", payload: filterState.propertyType })
-
-        dispatch({ type: "AVAILABILITY", payload: filterState.availability })
-    }
-
     return <div>
 
         <select
             value={filterState.rent}
-            onChange={(e) => setFilterState({ ...filterState, rent: Number(e.target.value) })}
+            onChange={(e) => {
+                setFilterState({ ...filterState, rent: Number(e.target.value) });
+                dispatch({ type: "RENT", payload: Number(e.target.value) })
+            }}
         >
             <option value={initialState.rent}>Any</option>
             <option value="5000">0-5k</option>
@@ -34,7 +26,10 @@ export default function Filters() {
 
         <select
             value={filterState.location}
-            onChange={(e) => setFilterState({ ...filterState, location: e.target.value })}
+            onChange={(e) => {
+                setFilterState({ ...filterState, location: e.target.value })
+                dispatch({ type: "LOCATION", payload: e.target.value })
+            }}
         >
             <option value={initialState.location}>Any</option>
             <option value={locationData.delhi}>Delhi</option>
@@ -45,7 +40,10 @@ export default function Filters() {
 
         <select
             value={filterState.propertyType}
-            onChange={(e) => setFilterState({ ...filterState, propertyType: e.target.value })}
+            onChange={(e) => {
+                setFilterState({ ...filterState, propertyType: e.target.value })
+                dispatch({ type: "PROPERTY_TYPE", payload: e.target.value })
+            }}
         >
             <option value={initialState.propertyType}>Any</option>
             <option value={propertyTypeData.studio}>Studio</option>
@@ -56,16 +54,17 @@ export default function Filters() {
 
         <select
             value={filterState.availability}
-            onChange={(e) => setFilterState({ ...filterState, availability: e.target.value })}
+            onChange={(e) => {
+                setFilterState({ ...filterState, availability: e.target.value })
+                dispatch({ type: "AVAILABILITY", payload: e.target.value })
+            }}
         >
-             <option value={initialState.availability}>Any</option>
+            <option value={initialState.availability}>Any</option>
             <option value={availabilityData.immediately}>immediately</option>
             <option value={availabilityData.within1month}>within1month</option>
             <option value={availabilityData.within3months}>within3months</option>
             <option value={availabilityData.after3months}>after3months</option>
         </select>
-
-        <button onClick={searchProperty}>Search</button>
 
 
     </div>
