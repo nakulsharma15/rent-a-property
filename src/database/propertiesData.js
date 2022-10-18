@@ -1,23 +1,4 @@
-const availabilityData = {
-    immediately: "Immediately",
-    within1month: "Within 1 Month",
-    within3months: "Within 3 Months",
-    after3months: "After 3 Months",
-}
-
-const locationData = {
-    delhi: "Delhi, India",
-    mumbai: "Mumbai, India",
-    bangalore: "Bangalore, India",
-    hyderabad: "Hyderabad, India"
-}
-
-const propertyTypeData = {
-    studio: "Studio",
-    apartment: "Apartment",
-    floor: "Independent Floor",
-    house: "Independent House"
-}
+import { availabilityData, locationData, propertyTypeData } from "../Constants/propertyHelperData";
 
 const propertiesData = [
     {
