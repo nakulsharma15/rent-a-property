@@ -10,7 +10,10 @@ const useFilter = () => useContext(FilterContext);
 const FilterProvider = ({children}) => {
 
     const initialState = {
-        rent: 5000
+        rent: 5000,
+        location: "",
+        propertyType: "",
+        availability: ""
     }
 
     const [state, dispatch] = useReducer(filterReducer, initialState);
