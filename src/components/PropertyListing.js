@@ -2,7 +2,6 @@ import "./Styles/PropertyCard.css";
 import PropertyCard from "./PropertyCard";
 import { useFilter } from "../Filters/FilterContext";
 
-
 export default function PropertyListing() {
 
     const { filteredProductList } = useFilter();
