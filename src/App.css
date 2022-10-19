@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+    --primary-color: #6f65f1;
+    --primary-hover-color: #564bf4;
+}
+
 *,
 *::before,
 *::after {
@@ -17,10 +22,10 @@ body {
 }
 
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Poppins', sans-serif;
-  background-color: rgb(245, 245, 245);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(245, 245, 245);
 }
 
 .flex-sb-c {
@@ -29,11 +34,20 @@ body {
     align-items: center;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-c {
     display: flex;
     align-items: center;
 }
 
+.flex-jc {
+    display: flex;
+    justify-content: center;
+}
 
 .flex-wrap-c {
     display: flex;

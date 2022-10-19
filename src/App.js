@@ -7,7 +7,11 @@ function App() {
   return (
     <div className="App">
       <h1>Search properties to rent</h1>
-      <Filters />
+
+      <div className='flex-jc'>
+        <Filters />
+      </div>
+      
       <PropertyListing />
     </div>
   );

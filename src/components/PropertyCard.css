@@ -24,19 +24,11 @@
 }
 
 .property-content-header {
-   display: flex;
-   flex-direction: column;
    margin-top: 2rem;
 }
 
-.property-price {
-   display: flex;
-   align-items: center;
-}
-
 .property-price h2 {
-  /* color: rgb(103, 45, 248); */
-  color: #6f65f1;
+  color: var(--primary-color);
 }
 
 .property-price p {
@@ -63,8 +55,7 @@
 }
 
 .property-card-footer-div span {
-   /* color: rgb(103, 45, 248); */
-   color: #6f65f1;
+   color: var(--primary-color);
    font-size: 1.25rem;
 }
 
@@ -76,8 +67,7 @@
    width: 7rem;
    height: 2rem;
    gap: 0.5rem;
-   /* background-color: rgb(103, 45, 248); */
-   background-color: #6f65f1;
+   background-color: var(--primary-color);
    color: white;
    font-weight: 550;
    font-size: 0.8rem;

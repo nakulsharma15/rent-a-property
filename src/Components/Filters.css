@@ -1,0 +1,53 @@
+.filter-div {
+    max-width: fit-content;
+    margin: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.25rem;
+    padding: 0rem 2rem;
+}
+
+.filter-select-div {
+    border: 1px solid transparent;
+    border-right-color: rgb(205, 205, 205);
+    padding: 0.5rem;
+}
+
+.filter-select-div p{
+    color: gray;
+    font-size: 0.9rem;
+    margin-left: 0.7rem;
+}
+
+.filter-select-div select {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid green;
+    font-weight: bold;
+    width: 12rem;
+    padding: 0.25rem;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.reset-filter-button {
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 550;
+    border: 1px solid transparent;
+}
+
+.filter-select-div select:hover {
+    cursor: pointer;
+}
+
+.reset-filter-button:hover {
+    cursor: pointer;
+    background-color: var(--primary-hover-color);
+}

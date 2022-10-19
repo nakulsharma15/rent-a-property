@@ -1,3 +1,5 @@
+import { initialState } from "../Constants/propertyHelperData"
+
 export const filterReducer = (state, action) => {
 
     switch(action.type) {
@@ -8,6 +10,8 @@ export const filterReducer = (state, action) => {
        case "PROPERTY_TYPE": return {...state, propertyType: action.payload}
 
        case "AVAILABILITY": return {...state, availability: action.payload}
+
+       case "RESET": return initialState
 
        default: return state;
     }

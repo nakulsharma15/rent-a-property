@@ -18,8 +18,8 @@ export default function PropertyCard({propertyData}) {
 
             <div className="property-content">
 
-                <div className="property-content-header">
-                    <div className="property-price">
+                <div className="property-content-header flex-column">
+                    <div className="property-price flex-c">
                         <h2>₹{propertyData.rent}</h2>
                         <p>/month</p>
                     </div>
