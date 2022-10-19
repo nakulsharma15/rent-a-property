@@ -1,25 +1,9 @@
-const availabilityData = {
-    immediately: "Immediately",
-    within1month: "Within 1 Month",
-    within3months: "Within 3 Months",
-    after3months: "After 3 Months",
-}
-
-const locationData = {
-    delhi: "Delhi, India",
-    mumbai: "Mumbai, India",
-    bangalore: "Bangalore, India",
-    hyderabad: "Hyderabad, India"
-}
-
-const propertyTypeData = {
-    studio: "Studio",
-    apartment: "Apartment",
-    floor: "Independent Floor",
-    house: "Independent House"
-}
+import { availabilityData, locationData, propertyTypeData } from "../Constants/propertyHelperData";
 
 const propertiesData = [
+
+    //Delhi
+
     {
         name: "Aurora Studio",
         image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666009311/Rent%20A%20Property/Delhi/home-design_scxw98.jpg",
@@ -28,141 +12,166 @@ const propertiesData = [
         address: "131 Green Valley, " + locationData.delhi,
         availability: availabilityData.immediately,
         type: propertyTypeData.studio,
+        isPopular: true
     },
     {
         name: "Galaxy Apartment",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666009176/Rent%20A%20Property/Delhi/download_rjlqw3.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666075260/Rent%20A%20Property/Delhi/download_rjlqw3_1_io6fzg.png",
         rent: 9000,
         location: locationData.delhi,
         address: "106 Signature Road, " + locationData.delhi,
         availability: availabilityData.within1month,
         type: propertyTypeData.apartment,
+        isPopular: false
     },
     {
         name: "Delight Height",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666009176/Rent%20A%20Property/Delhi/download_rjlqw3.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666082413/Rent%20A%20Property/Delhi/download_ztcoda_1_dswjbu.png",
         rent: 18000,
         location: locationData.delhi,
         address: "108 Silver lane, " + locationData.delhi,
         availability: availabilityData.within3months,
         type: propertyTypeData.floor,
+        isPopular: true
     },
     {
         name: "Matrix Home",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666009097/Rent%20A%20Property/Delhi/download_d2mzcq.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666082592/Rent%20A%20Property/Delhi/download_d2mzcq_g5af3i.png",
         rent: 29000,
         location: locationData.delhi,
         address: "813 Ring Road, " + locationData.delhi,
         availability: availabilityData.after3months,
         type: propertyTypeData.house,
+        isPopular: false
     },
+
+    //Mumbai
+
     {
         name: "Springfield Homes ",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666069828/Rent%20A%20Property/Mumbai/pexels-photo-1370704_kr34j6.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666082797/Rent%20A%20Property/Mumbai/pexels-photo-1370704_kr34j6_uhxbtw.png",
         rent: 40000,
         location: locationData.mumbai,
         address: "234 Melody Lane, " + locationData.mumbai,
         availability: availabilityData.immediately,
         type: propertyTypeData.house,
+        isPopular: false
     },
     {
         name: "Golden Heights",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666069843/Rent%20A%20Property/Mumbai/pexels-photo-259962_didu7i.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666082750/Rent%20A%20Property/Mumbai/pexels-photo-259962_didu7i_fgz9a5.png",
         rent: 30000,
         location: locationData.mumbai,
         address: "816 Golden Heights Road, " + locationData.mumbai,
         availability: availabilityData.within1month,
         type: propertyTypeData.floor,
+        isPopular: true
     },
     {
         name: "Sunnyside Apartments",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666069821/Rent%20A%20Property/Mumbai/pexels-photo-2079234_a5jprg.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666082852/Rent%20A%20Property/Mumbai/pexels-photo-2079234_a5jprg_bf0osb.png",
         rent: 9000,
         location: locationData.mumbai,
         address: "182 Gentle Rain Drive, " + locationData.mumbai,
         availability: availabilityData.within3months,
         type: propertyTypeData.apartment,
+        isPopular: false
     },
     {
         name: "Rose Studio",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666069807/Rent%20A%20Property/Mumbai/pexels-photo-2089698_xtfi3d.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666082905/Rent%20A%20Property/Mumbai/pexels-photo-2089698_xtfi3d_bknzht.png",
         rent: 2800,
         location: locationData.mumbai,
         address: "125 Second Street, " + locationData.mumbai,
         availability: availabilityData.after3months,
         type: propertyTypeData.studio,
+        isPopular: true
     },
+
+    //Bangalore
+
     {
         name: "Greens Kosmos",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666070949/Rent%20A%20Property/Bangalore/pexels-photo-2251247_mpddis.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083092/Rent%20A%20Property/Bangalore/pexels-photo-2251247_mpddis_qgwtwl.png",
         rent: 5000,
         location: locationData.bangalore,
         address: "126 Asphalt Roads, " + locationData.bangalore,
         availability: availabilityData.immediately,
         type: propertyTypeData.studio,
+        isPopular: true
     },
     {
-        name: "Palm Groove Apartments",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666070942/Rent%20A%20Property/Bangalore/pexels-photo-2724748_wifmlo.webp",
+        name: "Palm Groove",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083126/Rent%20A%20Property/Bangalore/pexels-photo-2724748_wifmlo_ghch45.png",
         rent: 9000,
         location: locationData.bangalore,
         address: "883 Palm Groove Road, " + locationData.bangalore,
         availability: availabilityData.within1month,
         type: propertyTypeData.apartment,
+        isPopular: true
     },
     {
         name: "Cleo County",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666070962/Rent%20A%20Property/Bangalore/pexels-photo-323776_dlstxn.webp",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083054/Rent%20A%20Property/Bangalore/pexels-photo-323776_dlstxn_bgopic.png",
         rent: 19000,
         location: locationData.bangalore,
         address: "847 Earthen Area, " + locationData.bangalore,
         availability: availabilityData.within3months,
         type: propertyTypeData.floor,
+        isPopular: false
     },
     {
         name: "Orion House",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666070934/Rent%20A%20Property/Bangalore/pexels-photo-323772_lkliw7.webp",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083163/Rent%20A%20Property/Bangalore/pexels-photo-323772_lkliw7_es4kwb.png",
         rent: 40000,
         location: locationData.bangalore,
         address: "100 Golf Course Road, " + locationData.bangalore,
         availability: availabilityData.after3months,
         type: propertyTypeData.house,
+        isPopular: false
     },
+
+    //Hyderabad
+
     {
         name: "The Golden Palm",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666071967/Rent%20A%20Property/Hyderabad/pexels-photo-1475938_riskz6.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083501/Rent%20A%20Property/Hyderabad/pexels-photo-1475938_riskz6_w2n1ya.png",
         rent: 35000,
         location: locationData.hyderabad,
         address: "182A Palm Street Road, " + locationData.hyderabad,
         availability: availabilityData.immediately,
         type: propertyTypeData.house,
+        isPopular: false
     },
     {
         name: "Exotica Towers",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666072123/Rent%20A%20Property/Hyderabad/pexels-photo-276554_jgyrcp.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083353/Rent%20A%20Property/Hyderabad/pexels-photo-276554_jgyrcp_spl1ze.png",
         rent: 20000,
         location: locationData.hyderabad,
         address: "125EXT Second Street, " + locationData.hyderabad,
         availability: availabilityData.within1month,
         type: propertyTypeData.floor,
+        isPopular: false
     },
     {
         name: "Nilgiri Apartments",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666071974/Rent%20A%20Property/Hyderabad/pexels-photo-271624_sfoymt.webp",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083436/Rent%20A%20Property/Hyderabad/pexels-photo-271624_sfoymt_f2dwha.png",
         rent: 4000,
         location: locationData.hyderabad,
         address: "813A Apartment Road, " + locationData.hyderabad,
         availability: availabilityData.within3months,
         type: propertyTypeData.apartment,
+        isPopular: true
     },
     {
         name: "Golfshire Studio",
-        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666071989/Rent%20A%20Property/Hyderabad/pexels-photo-2988860_usu6ni.jpg",
+        image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083422/Rent%20A%20Property/Hyderabad/pexels-photo-2988860_usu6ni_hknfvz.png",
         rent: 9000,
         location: locationData.hyderabad,
         address: "141 Golf Course Road, " + locationData.hyderabad,
         availability: availabilityData.after3months,
         type: propertyTypeData.studio,
+        isPopular: true
     },
 ];
 

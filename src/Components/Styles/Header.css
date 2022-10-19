@@ -1,0 +1,19 @@
+.header {
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(197, 196, 196);
+}
+
+.header-text {
+    font-size: 3rem;
+}
+
+.header-text span {
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+.header-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
