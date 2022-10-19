@@ -52,3 +52,38 @@
     background-color: var(--primary-hover-color);
 }
 
+@media only screen and (max-width: 1000px) {
+    .reset-filter-button {
+        display: none;
+    }
+} 
+
+
+@media only screen and (max-width: 900px) {
+    .filter-select-div select {
+        width: 8rem;
+    }
+
+    .filter-div { 
+        padding: 0rem;
+    }
+} 
+
+
+@media only screen and (max-width: 600px) {
+
+    .filter-div { 
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .filter-select-div select {
+        width: 15rem;
+    }
+
+    .filter-select-div {
+        border-top-color: rgb(205, 205, 205);
+        border-right-color: transparent;
+    }
+
+} 

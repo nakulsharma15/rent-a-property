@@ -1,6 +1,6 @@
 import "./Styles/PropertyCard.css";
 
-export default function PropertyCard({propertyData}) {
+export default function PropertyCard({ propertyData }) {
 
     return <>
         <div className="property-card">
@@ -9,12 +9,12 @@ export default function PropertyCard({propertyData}) {
                 <img src={propertyData.image} alt={propertyData.name} />
             </div>
 
-            <div className="popular-property-div flex-c">
+            {propertyData.isPopular === true ? <div className="popular-property-div flex-c">
                 <span className="material-symbols-outlined">
                     temp_preferences_custom
                 </span>
                 Popular
-            </div>
+            </div> : null}
 
             <div className="property-content">
 
@@ -34,37 +34,28 @@ export default function PropertyCard({propertyData}) {
 
                     <div className="property-card-footer-div flex-c">
 
-                        <span className="material-symbols-outlined">
-                            bed
+                        <span className="material-icons-outlined">
+                            location_on
                         </span>
-                        <p>3 Beds</p>
+                        <p>{propertyData.location}</p>
 
                     </div>
 
                     <div className="property-card-footer-div flex-c">
 
-                        <span className="material-symbols-outlined">
-                            bathtub
+                        <span className="material-icons-outlined">
+                            maps_home_work
                         </span>
-                        <p>2 Bathrooms</p>
+                        <p>{propertyData.type}</p>
 
                     </div>
 
-                    <div className="property-card-footer-div flex-c">
-
-                        <span className="material-symbols-outlined">
-                            area_chart
-                        </span>
-
-                        <p>5x7 m<sup>2</sup></p>
-
-                    </div>
 
                 </div>
 
             </div>
 
         </div>
-        
+
     </>
 }

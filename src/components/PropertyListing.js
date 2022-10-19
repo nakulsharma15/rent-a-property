@@ -7,10 +7,7 @@ export default function PropertyListing() {
 
     const { filteredProductList } = useFilter();
 
-    return <div>
-
-    <div className="property-listing flex-wrap-c">
+    return <div className="property-listing flex-wrap-c">
         {filteredProductList.map((propertyData) => <PropertyCard propertyData={propertyData} key={propertyData.name} />)}
-    </div>
     </div>
 }

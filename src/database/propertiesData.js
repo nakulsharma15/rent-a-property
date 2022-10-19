@@ -12,6 +12,7 @@ const propertiesData = [
         address: "131 Green Valley, " + locationData.delhi,
         availability: availabilityData.immediately,
         type: propertyTypeData.studio,
+        isPopular: true
     },
     {
         name: "Galaxy Apartment",
@@ -21,6 +22,7 @@ const propertiesData = [
         address: "106 Signature Road, " + locationData.delhi,
         availability: availabilityData.within1month,
         type: propertyTypeData.apartment,
+        isPopular: false
     },
     {
         name: "Delight Height",
@@ -30,6 +32,7 @@ const propertiesData = [
         address: "108 Silver lane, " + locationData.delhi,
         availability: availabilityData.within3months,
         type: propertyTypeData.floor,
+        isPopular: true
     },
     {
         name: "Matrix Home",
@@ -39,6 +42,7 @@ const propertiesData = [
         address: "813 Ring Road, " + locationData.delhi,
         availability: availabilityData.after3months,
         type: propertyTypeData.house,
+        isPopular: false
     },
 
     //Mumbai
@@ -51,6 +55,7 @@ const propertiesData = [
         address: "234 Melody Lane, " + locationData.mumbai,
         availability: availabilityData.immediately,
         type: propertyTypeData.house,
+        isPopular: false
     },
     {
         name: "Golden Heights",
@@ -60,6 +65,7 @@ const propertiesData = [
         address: "816 Golden Heights Road, " + locationData.mumbai,
         availability: availabilityData.within1month,
         type: propertyTypeData.floor,
+        isPopular: true
     },
     {
         name: "Sunnyside Apartments",
@@ -69,6 +75,7 @@ const propertiesData = [
         address: "182 Gentle Rain Drive, " + locationData.mumbai,
         availability: availabilityData.within3months,
         type: propertyTypeData.apartment,
+        isPopular: false
     },
     {
         name: "Rose Studio",
@@ -78,6 +85,7 @@ const propertiesData = [
         address: "125 Second Street, " + locationData.mumbai,
         availability: availabilityData.after3months,
         type: propertyTypeData.studio,
+        isPopular: true
     },
 
     //Bangalore
@@ -90,6 +98,7 @@ const propertiesData = [
         address: "126 Asphalt Roads, " + locationData.bangalore,
         availability: availabilityData.immediately,
         type: propertyTypeData.studio,
+        isPopular: true
     },
     {
         name: "Palm Groove",
@@ -99,6 +108,7 @@ const propertiesData = [
         address: "883 Palm Groove Road, " + locationData.bangalore,
         availability: availabilityData.within1month,
         type: propertyTypeData.apartment,
+        isPopular: true
     },
     {
         name: "Cleo County",
@@ -108,6 +118,7 @@ const propertiesData = [
         address: "847 Earthen Area, " + locationData.bangalore,
         availability: availabilityData.within3months,
         type: propertyTypeData.floor,
+        isPopular: false
     },
     {
         name: "Orion House",
@@ -117,6 +128,7 @@ const propertiesData = [
         address: "100 Golf Course Road, " + locationData.bangalore,
         availability: availabilityData.after3months,
         type: propertyTypeData.house,
+        isPopular: false
     },
 
     //Hyderabad
@@ -129,6 +141,7 @@ const propertiesData = [
         address: "182A Palm Street Road, " + locationData.hyderabad,
         availability: availabilityData.immediately,
         type: propertyTypeData.house,
+        isPopular: false
     },
     {
         name: "Exotica Towers",
@@ -138,6 +151,7 @@ const propertiesData = [
         address: "125EXT Second Street, " + locationData.hyderabad,
         availability: availabilityData.within1month,
         type: propertyTypeData.floor,
+        isPopular: false
     },
     {
         name: "Nilgiri Apartments",
@@ -147,6 +161,7 @@ const propertiesData = [
         address: "813A Apartment Road, " + locationData.hyderabad,
         availability: availabilityData.within3months,
         type: propertyTypeData.apartment,
+        isPopular: true
     },
     {
         name: "Golfshire Studio",
@@ -156,6 +171,7 @@ const propertiesData = [
         address: "141 Golf Course Road, " + locationData.hyderabad,
         availability: availabilityData.after3months,
         type: propertyTypeData.studio,
+        isPopular: true
     },
 ];
 
