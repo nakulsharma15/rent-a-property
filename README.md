@@ -1,5 +1,5 @@
 <h1>
-  <a href="">
+  <a href="https://rent-a-property-project.vercel.app/">
    Rent a Property
   </a>
 </h1>
@@ -7,7 +7,7 @@
 <p>
     Rent a Property is an online property searching web app. Our mission is to be the first choice for our customers and partners in their journey of discovering and renting properties.
   <br>
-  <a href=""><strong>Explore Rent a Property</strong></a>
+  <a href="https://rent-a-property-project.vercel.app/"><strong>Explore Rent a Property</strong></a>
   <br>
 
 ## Technologies Used -
@@ -18,7 +18,7 @@
 4. Vercel for hosting the website.
 
 ## Use the app:
-<p><a href="">
+<p><a href="https://rent-a-property-project.vercel.app/">
    Rent a Property
   </a></p>
 
