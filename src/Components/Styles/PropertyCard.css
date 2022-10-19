@@ -86,3 +86,11 @@
    margin-top: 4rem;
    gap: 5rem;
 }
+
+.no-result-div h1 {
+   color: var(--primary-color);
+}
+
+.no-result-div p {
+   color: gray;
+}

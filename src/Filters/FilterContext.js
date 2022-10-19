@@ -1,6 +1,6 @@
 import { createContext, useContext, useReducer, useState } from "react";
 import { filterReducer } from "./FilterReducer";
-import propertiesData from "../Database/PropertiesData";
+import propertiesData from "../Database/propertiesData";
 import { getFilteredProductList } from "./FilterFunction";
 import { initialState } from "../Constants/propertyHelperData";
 
