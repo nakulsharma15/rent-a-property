@@ -1,4 +1,4 @@
-import "./PropertyCard.css";
+import "./Styles/PropertyCard.css";
 
 export default function PropertyCard({propertyData}) {
 

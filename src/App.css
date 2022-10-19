@@ -28,9 +28,19 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
+.title-text {
+   margin: 2rem 8.5rem;
+}
+
 .flex-sb-c {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -58,6 +68,6 @@ body {
 .flex-wrap-sb-c {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }

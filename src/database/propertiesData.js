@@ -1,6 +1,9 @@
 import { availabilityData, locationData, propertyTypeData } from "../Constants/propertyHelperData";
 
 const propertiesData = [
+
+    //Delhi
+
     {
         name: "Aurora Studio",
         image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666009311/Rent%20A%20Property/Delhi/home-design_scxw98.jpg",
@@ -37,6 +40,9 @@ const propertiesData = [
         availability: availabilityData.after3months,
         type: propertyTypeData.house,
     },
+
+    //Mumbai
+
     {
         name: "Springfield Homes ",
         image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666082797/Rent%20A%20Property/Mumbai/pexels-photo-1370704_kr34j6_uhxbtw.png",
@@ -73,6 +79,9 @@ const propertiesData = [
         availability: availabilityData.after3months,
         type: propertyTypeData.studio,
     },
+
+    //Bangalore
+
     {
         name: "Greens Kosmos",
         image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083092/Rent%20A%20Property/Bangalore/pexels-photo-2251247_mpddis_qgwtwl.png",
@@ -109,6 +118,9 @@ const propertiesData = [
         availability: availabilityData.after3months,
         type: propertyTypeData.house,
     },
+
+    //Hyderabad
+
     {
         name: "The Golden Palm",
         image: "https://res.cloudinary.com/nakulsharma15/image/upload/v1666083501/Rent%20A%20Property/Hyderabad/pexels-photo-1475938_riskz6_w2n1ya.png",

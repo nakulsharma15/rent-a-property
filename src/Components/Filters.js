@@ -1,4 +1,4 @@
-import "./Filters.css";
+import "./Styles/Filters.css";
 import { useFilter } from "../Filters/FilterContext";
 import { useState } from "react";
 import { availabilityData, locationData, propertyTypeData, initialState } from "../Constants/propertyHelperData";
